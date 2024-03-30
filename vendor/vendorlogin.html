@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../Student/student.css">
+        <script type="text/javascript" src="vscript.js"></script>
+    </head>
+    <body onload=display_ct();>
+        <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js"></script>
+        <p id='ct' ></p>   
+        <center>
+            <div class="container">
+                <h1 style="color: #DAB894;"><i><big>Vendor Login</big></i></h1>
+            <table>
+                <form name="f1" action="success.html" onsubmit="return validate()">
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" class="inp" name="t1" required placeholder="Enter your Name"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" class="inp" name="t2" required placeholder="Enter your Email Id"></td>
+                </tr>
+                <tr>
+                    <td>Vendor ID</td>
+                    <td><input type="text" class="inp" name="t3" required placeholder="Enter your Vendor Id"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" class="inp" name="t4" required placeholder="Enter your password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><br><br><input type="submit" id="submit"></td>
+                </tr>
+                </form>
+            </table>
+        </div>
+        </center>
+    </body>
+</html>

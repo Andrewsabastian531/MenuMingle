@@ -1,0 +1,269 @@
+/* CSS setting */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather';
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+body {
+
+    width: 100%;
+    height: 100%;
+    background: url(img/bgimage2.jpg);
+    background-size: 100%;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+
+}
+
+/* NAVIGATION BAR */
+
+.navbar {
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.376);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+}
+
+
+.navbar ul li a {
+    display: block;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: black;
+    background-color:#DAB894 ;
+    border-radius: 30px;
+}
+
+/* CSS for the mode toggle button */
+#mode-toggle {
+    padding: 8px 16px;
+    background-color: #f8f9fa;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Merriweather', serif; /* Use a custom font */
+    font-size: 14px;
+    text-transform: uppercase; /* Uppercase text */
+    outline: none; /* Remove outline on focus */
+}
+
+#mode-toggle:hover {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+/* Dark mode styles */
+.dark-mode #mode-toggle {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+.dark-mode #mode-toggle:hover {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Dark mode background image */
+.dark-mode {
+    background-image: url('img/bgimage2.jpg');
+    /* Add other dark mode styles */
+}
+
+/* Light mode background image */
+.light-mode {
+    background-image: url('img/bgimage1.jpg');
+    /* Add other light mode styles */
+}
+
+
+#logo {
+    margin: 8px;
+}
+
+#logo img {
+    height: 61px;
+}
+
+/* HOME SECTION */
+#home {
+     background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    height: 30em;
+    margin: 4px;
+    height: 100vh;
+    width: 98.5vw;
+}
+
+.h-primary {
+    color: #89652c;
+    font-size: 60px;
+    padding-bottom: 25px;
+    padding-right: 600px;
+}
+
+#home p {
+    color: white;
+    margin: 10px;
+    padding-right: 480px;
+    padding-left: 15px;
+    font-size: 24px;
+}
+
+#home .btndiv{
+    display: flex;
+}
+#home button {
+    display: block;
+    height: 80px;
+    width: 200px;
+    border-radius: 30px;
+    border: 1px solid black;
+    color: black;
+    background-color: #f3ba7d;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 250px
+    
+}
+
+
+#home button:hover {
+    background-color: #d9aa77;
+    color: black;
+}
+
+/* SERVICES SECTION */
+.sitembox {
+    display: flex;
+    font-size: 20px;
+    padding-bottom: 35px;
+}
+
+#sitembox p {
+    
+    color: white;
+    font-size: 20px;
+    align-items: center;
+
+}
+.sbox p{
+    color: white;
+}
+.sbox img {
+    height: 160px;
+    display: block;
+    margin: 30px;
+    border: 4px solid #DAB894;
+    border-radius: 10px;
+}
+
+.sbox {
+    margin: 4px 50px;
+    border-radius: 44px;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.sbox h2 {
+    text-align: center;
+    color: #89652c;
+    margin-bottom: 15px;
+}
+
+
+.s-primary {
+    color: #89652c;
+    text-align: center;
+    font-size: 3.8rem;
+    padding-bottom: 35px;
+    
+}
+
+/* QUALITY CONTROL */
+.c-primary {
+    color: #89652c;
+    font-size: 60px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+#client-section{
+.sbox{
+    padding-right: 120px;
+    font-size: 20px;
+}
+}
+/* CONTACT SECTION */
+.co-primary {
+    color: #89652c;
+    text-align: center;
+    font-size: 3.8rem;
+    padding-bottom: 35px;
+}
+
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+#contact input {
+    width: 85vw;
+    padding: 0.7rem;
+    border-radius: 8px;
+    font-size: 20px;
+}
+
+#contact label {
+    display: block;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+#contact {
+    position: relative;
+}
+
+.form-group {
+    padding-left: 40px;
+    color: white;
+}
+
+/* FOOTER  */
+.center {
+    color: black;
+    background-color: #d0a270;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
